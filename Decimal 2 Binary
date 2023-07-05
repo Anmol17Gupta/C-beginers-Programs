@@ -1,0 +1,17 @@
+//WAP to convert decimal to binary expression
+#include <stdio.h>
+
+int main(){
+    int n=15;
+    int dec=0;
+    int power=1;
+    
+    while(n!=0){
+        int r=n%2;
+        n/=2;
+        dec+=r*power;
+        power*=10;
+    }
+    
+    printf("%d",dec);
+}
